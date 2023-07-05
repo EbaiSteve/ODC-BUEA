@@ -1,0 +1,151 @@
+:root{
+    --main-color: black;
+    --sec-color: rgb(241, 206, 3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: var(--main-color);
+    padding: 1rem 0;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.navbar h1 {
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span, .active, .navbar a:hover {
+    color: rgb(247, 210, 0);
+}
+   /* End of navbar */
+
+   /* Start of hero */
+.hero {
+    background-color: var(--sec-color);
+    height: 400px;
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero h1, .hero p {
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 30px;
+
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero a {
+    background-color: black;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.hero a:hover {
+    opacity: 0.8;
+}
+/* Start of about */
+
+.AboutUs .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.AboutUs img {
+    width: 100%;
+}
+/* End of about  */
+
+.AboutUs {
+    margin-top: 2rem;
+}
+
+.section-title {
+    margin-bottom: 1em;
+    color: var(--main-color);
+}
+
+.section-title h1{
+    display: inline-block;
+    padding: 0.2rem;
+    border-bottom: 3px solid var(--sec-color);
+    font-size: 25px;
+}
+
+.AboutUs p {
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/* End of footer */
+/* Start Responsiveness */
+
+@media(max-width: 991px) {
+    .navbar .container {
+        display: block;
+        text-align: center;
+    }
+    .navbar h1 {
+        margin-bottom: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 25px;
+    }
+    .hero p{
+        padding: 0.5rem;
+    }
+    .hero a{
+        padding: 0.5rem;
+    }
+    .AboutUs .container {
+        display:block;
+    }
+
+}
+/* End of Responsiveness */
